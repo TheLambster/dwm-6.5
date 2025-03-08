@@ -6,8 +6,8 @@ static const unsigned int gappx     = 4;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10" };
-static const char dmenufont[]       = "monospace:size=10";
+static const char *fonts[]          = { "MesloLGL Nerd Font Mono:size=10" };
+static const char dmenufont[]       = "MesloLGL Nerd Font Mono:size=8";
 static const char col_gray1[]       = "#000000";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -20,7 +20,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "A", "B", "C", "D", "E", "F", "G", "H", "I" };
+static const char *tags[] = { "", "", "", "", "", "idle" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -40,9 +40,9 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+	{ "tile",      tile },    /* first entry is default */
+	{ "float",      NULL },    /* no layout function means floating behavior */
+	{ "monocle",      monocle },
 };
 
 /* key definitions */
